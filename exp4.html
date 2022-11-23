@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <label for="string">String1</label>
+    <input type="text" id="str1" placeholder="Enter your 1st string">
+    <label for="string">String2</label>
+    <input type="text" id="str2" placeholder="Enter your 2nd string">
+    <button onclick="string()">Click Here</button>
+    <script>
+        function string(){
+            let str1=document.getElementById("str1").value;
+            let str2=document.getElementById("str2").value;
+            let strr1=str1.toLowerCase();
+            let strr2=str2.toLowerCase();
+            if(strr1==strr2){
+                document.getElementById("demo").innerHTML="Strings are same";
+            }else{
+                document.getElementById("demo").innerHTML="Strings are not same";
+            }
+        }
+        // let str1=prompt("Enter your string1 : "); //2nd way
+        // let str2=prompt("Enter your string2 : ");
+        // if(str1==str2){
+        //     document.write("Strings are same");
+        // }else{
+        //     document.write("Strings are not same : ");
+        // }
+    </script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">Simple calculator</p>
+    Enter first number : <input type="number" id="fno"><br><br>
+    Enter second number : <input type="number" id="sno"><br><br>
+    <button onclick="add()">Addition</button>
+    <button onclick="sub()">Subtraction</button>
+    <button onclick="mul()">Multiplication</button>
+    <button onclick="div()">Division</button>
+    <script>
+        function add(){
+            num1=document.getElementById("fno").value;
+            num2=document.getElementById("sno").value;
+            
+            if(num1===""){
+                alert("Enter your first number")
+            }else if(num2===""){
+                alert("Enter your second number")
+            }else{
+                document.getElementById("demo").innerHTML=("Added number is "+(parseInt(num1)+parseInt(num2)))
+            }
+        }
+        function sub(){
+            num1=document.getElementById("fno").value;
+            num2=document.getElementById("sno").value;
+            
+            if(num1===""){
+                alert("Enter your first number")
+            }else if(num2===""){
+                alert("Enter your second number")
+            }else{
+                document.getElementById("demo").innerHTML=`Result is ${(parseInt(num1)-parseInt(num2))}`
+            }
+        }
+        function mul(){
+            num1=document.getElementById("fno").value;
+            num2=document.getElementById("sno").value;
+            
+            if(num1===""){
+                alert("Enter your first number")
+            }else if(num2===""){
+                alert("Enter your second number")
+            }else{
+                document.getElementById("demo").innerHTML=parseInt(num1)*parseInt(num2)
+            }
+        }
+        function div(){
+            num1=document.getElementById("fno").value;
+            num2=document.getElementById("sno").value;
+            
+            if(num1===""){
+                alert("Enter your first number")
+            }else if(num2===""){
+                alert("Enter your second number")
+            }else{
+                document.getElementById("demo").innerHTML=parseInt(num1)/parseInt(num2)
+
+            }
+        }
+        // const operator=prompt("Enter your operator");
+        // const num1 =parseInt(prompt("Enter your first number"));
+        // const num2 =parseInt(prompt("Enter your second number"));
+        // let result;
+        // if(operator=='+'){
+        //     result=num1 + num2;
+        // }else if(operator=='-'){
+        //     result=num1-num2;
+        // }else if(operator=='*'){
+        //     result=num1*num2;
+        // }else{
+        //     result=num1/num2;
+        // }document.write(`${num1} ${operator} ${num2}=${result}`);
+    </script>
+</body>
+</html>

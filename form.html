@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <h1 style="text-align:center">Student Registration</h1>
+    <form name="form1"  >
+        First Name: <input id="myname" type="text" name="firstname"><br><br>
+        Last Name: <input type="text" name="lastname" id="lname"><br><br>
+        Email Id: <input type="text" name="emailid" id="email"><br><br>
+        Gender: <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female<br><br>
+        Mobile number:<input type="number" name="mobilenumber" id="mob"><br><br>
+        Address: <input type="text" name="address" id="add"><br><br>
+        City: <input type="text" name="city" id="city"><br><br>
+        State: <input type="text" name="state"><br><br>
+        <button onclick="validate()">Submit</button>
+    </form>
+    <script>
+            function validate(){
+                let firstname = document.getElementById("myname").value.trim();
+                let lastname = document.getElementById("lname").value.trim();
+                let emailid = document.getElementById("email").value.trim();
+                let mob = document.getElementById("mob").value.trim();
+                let add = document.getElementById("add").value.trim();
+                let city = document.getElementById("city").value.trim();
+                if(firstname===""){
+                    alert("Please enter your first name");
+                }if(lastname===""){
+                    alert("Please enter your last name");
+                }
+                if(emailid===""){
+                    alert("Please enter your emailid");
+                }
+                if(mob===""){
+                    alert("Please enter your mobile no");
+                }
+                if(add===""){
+                    alert("Please enter your address");
+                }if(city===""){
+                    alert("Please enter your city");
+                }
+                else{
+                    document.write(`Congartulations ${firstname} ${lastname} Your form has been submitted`);
+                }
+                
+               
+            }
+    //         // <!-- <li><a onmouseover="document.body.style.backgroundColor='green'">Home</a></li>
+    // <li><a onmouseover="document.body.style.backgroundColor='blue'">Resume</a></li>
+    // <li><a onmouseover="document.body.style.backgroundColor='pink'">Contact</a></li>
+    // <li><a onmouseover="document.body.style.backgroundColor='yellow'">Linkedin</a></li> -->
+    
+        // window.alert("Hello");
+        // // alert("Hello")
+        // document.getElementById("demo").innerHTML ="Browser inner window width: " + window.innerWidth + "px<br>" +"Browser inner window height: " + window.innerHeight + "px";
+        // let n= prompt("Enter your number : ");
+        // for(let i=1;i<=10;i++){
+        //     result=n*i;
+        //     document.write(n+"x"+i+"="+result)}
+
+
+        // function validateForm(){
+        //     if(document.form1.firstname.value=""){
+        //         alert("Please enter your first name");
+        //         return false;
+        //     }
+        //     if(document.form1.mobilenumber.value=""){
+        //         alert("Please enter your mobilenumber");
+        //         return false;
+        //     }
+        //     if(document.form1.emailid.value=""){
+        //         alert("Please enter your emailid");
+        //         return false;
+        //     }
+        //     document.write("Congartulations and Welcome to new page ");
+        //     return true;
+        // }
+        
+    </script>
+
+</body>
+</html>

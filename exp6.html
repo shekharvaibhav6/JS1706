@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>arr1=["1","2","3","4","5","6","7","8"]</p>
+    <script>
+        var arr1=["1","2","3","4","5","6","7","8"];
+        let res=arr1.splice(7,7);
+        let res2=arr1.includes("7")
+        document.write("Removed element is"+res);
+        document.write("<br>");
+        document.write("Contains specified value "+ res2)
+        document.write("<br>");
+
+        for(let i=0; i < arr1.length;i++){
+            document.write(arr1[i]+ " ,");
+            
+        }
+    
+    
+    </script>
+</body>
+</html>
