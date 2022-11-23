@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="C:\Users\shekh\OneDrive\Desktop\new\.js"></script>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <h1>Area of triangle</h1>
+    <lable for="base">base</lable>
+    <input type="number" name="traingle" id="tri1"><br><br>
+    <lable for="height">height</lable>
+    <input type="number" name="height" id="tri2"><br><br>
+    <button onclick="mytriangle()">Result1</button>
+    <h1>Area of Rectangle</h1>
+    <lable for="length">length</lable>
+    <input type="number" name="rectangle" id="len"><br><br>
+    <lable for="breadth">breadth</lable>
+    <input type="number" name="height" id="bred"><br><br>
+    <button onclick="myrectangle()">Result2</button>
+    <h1>Area of Circle</h1>
+    <lable for="radius">radius</lable>
+    <input type="number" name="breadth" id="rad"><br><br>
+    <button onclick="myCircle()">Result3</button>
+    <script>
+        function mytriangle(){
+            let base=document.getElementById("tri1").value;
+            let height=document.getElementById("tri2").value; 
+            let result=(1/2)*base*height;
+            document.getElementById("demo").innerHTML=`Area of triangle : ${result}.`
+        }
+            function myrectangle(){
+            let length=document.getElementById("len").value;
+            let breadth=document.getElementById("bred").value; 
+            let result2=length*breadth;
+            document.getElementById("demo2").innerHTML=`Area of rectangle : ${result2}.`
+        }
+            function myCircle(){
+            let radius=document.getElementById("rad").value; 
+            let result3=Math.PI*radius*radius;
+            document.getElementById("demo3").innerHTML=`Area of Circle : ${result3}.`
+        
+       
+        }
+    </script>  
+</body>
+</html>
